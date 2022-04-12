@@ -28,6 +28,13 @@ console.log(`HMAC: ${cryptoModule.HMAC}`)
 
 dialog()
 
+console.log('You move: ' + userMove)
+console.log('Computer move: ' + computerMove)
+if (movesRule[userMove].more.includes(computerMove)) console.log("You lose!")
+else if (movesRule[userMove].less.includes(computerMove)) console.log('You win!')
+else console.log('Draw!')
+console.log('HMAC key: ' + cryptoModule.key)
+
 function dialog() {
     console.log('Available moves:')
     let i = 1;
@@ -52,14 +59,3 @@ function dialog() {
             dialog()
     }
 }
-
-console.log('You move: ' + userMove)
-console.log('Computer move: ' + computerMove)
-if (movesRule[userMove].more.includes(computerMove)) console.log("You lose!")
-else if (movesRule[userMove].less.includes(computerMove)) console.log('You win!')
-else console.log('Draw!')
-console.log('HMAC key: ' + cryptoModule.key)
-
-
-
-
