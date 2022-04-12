@@ -1,0 +1,13 @@
+{
+  "name": "Task3",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "collect.js": "^4.32.0",
+    "console-table-printer": "^2.11.0",
+    "js-crypto-random": "^1.0.4",
+    "random-number-csprng": "^1.0.2",
+    "readline-sync": "^1.4.10"
+  }
+}
