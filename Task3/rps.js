@@ -46,7 +46,11 @@ function dialog() {
 
     let answer = readlineSync.question('Enter your move: ')
     if (answer <= moves.length && answer > 0) userMove = moves[answer - 1]
-    else switch (answer) {
+    else getOtherAns(answer)
+}
+
+function getOtherAns(answer) {
+    switch (answer) {
         case '0':
             process.exit();
             break
